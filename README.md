@@ -41,5 +41,5 @@ npm install
 
 
 ### Step 4: Start the local development Server
-``` bash
+```bash
 npm run dev

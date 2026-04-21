@@ -38,7 +38,7 @@ For example:
 Run the following command to read the `package.json` file and download the required libraries (React, Tailwind, and Vis.js):
 ```bash
 npm install
-
+```
 
 ### Step 4: Start the local development Server
 ```bash

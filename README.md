@@ -1,16 +1,45 @@
-# React + Vite
+# Deterministic Finite Automaton (DFA) Visualizer Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Student:** Nguyễn Thịnh Khang
+**Institution:** Vietnamese-German University (VGU)
+**Project:** Chapter 2 & 3 Practice Test Exemption - Automata Visualization
+**Tech Stack:** React.js (Vite), Tailwind CSS, Vis.js
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project Overview
+This project is an interactive web application built to visualize the execution flow of a Deterministic Finite Automaton (DFA). Users can define custom states, alphabets, and transition functions, and then visually track the computation of an input string step-by-step or via real-time auto-play.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Prerequisites
+To run this project locally, your machine must have **Node.js** installed. 
+You can verify if Node.js is installed by opening your terminal or command prompt and running:
+`node -v`
 
-## Expanding the ESLint configuration
+If it is not installed, please download it from the official website: [https://nodejs.org/](https://nodejs.org/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 How to Run the Project (Step-by-Step)
+
+Because the `node_modules` folder (which contains the library dependencies) is extremely large, it has been excluded from this zip file. You will need to generate it locally using the following steps:
+
+### Step 1: Extract the Folder
+Ensure you have completely extracted the zipped folder to a location on your computer (e.g., your Desktop). Do not run the commands while still inside the `.zip` archive.
+
+### Step 2: Open Your Terminal
+Open your preferred terminal command line (Command Prompt, PowerShell, or the integrated terminal in VS Code). Navigate into the root directory of this extracted project folder. 
+
+For example:
+`cd path/to/extracted/dfa-visualizer`
+
+### Step 3: Install Dependencies
+Run the following command to read the `package.json` file and download the required libraries (React, Tailwind, and Vis.js):
+```bash
+npm install
+
+
+### Step 4: Start the local development Server
+``` bash
+npm run dev

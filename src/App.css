@@ -1,0 +1,95 @@
+/* src/App.css */
+@import "tailwindcss";
+
+.app-wrapper {
+  @apply w-screen h-screen flex flex-col font-sans bg-gray-100 overflow-hidden;
+}
+
+.app-header {
+  @apply bg-blue-900 text-white p-4 shadow-md flex-none;
+}
+
+.header-title {
+  @apply text-2xl font-bold text-center tracking-wide;
+}
+
+.main-layout {
+  @apply flex-1 flex flex-row overflow-hidden p-4 gap-4;
+}
+
+/* Specific Panels - Adjusted widths for a wider graph */
+.panel-controls {
+  @apply bg-white rounded-lg shadow-lg flex flex-col w-[30%] p-6 gap-4 overflow-y-auto;
+}
+
+.panel-graph {
+  @apply bg-white rounded-lg shadow-lg flex flex-col w-[50%] p-2; /* Changed p-4 to p-2 for more space */
+}
+
+.panel-scoreboard {
+  @apply bg-white rounded-lg shadow-lg flex flex-col w-[20%] p-6 justify-between;
+}
+
+/* Typography and Forms */
+.section-title {
+  @apply text-xl font-bold border-b pb-2 mb-4 text-gray-800;
+}
+
+.form-label {
+  @apply block text-sm font-semibold text-gray-700 uppercase tracking-wider mb-1;
+}
+
+.form-input {
+  @apply block w-full border border-gray-300 rounded p-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply flex-1 bg-blue-600 text-white py-3 rounded font-bold hover:bg-blue-700 transition-colors shadow;
+}
+
+.btn-secondary {
+  @apply flex-1 bg-yellow-500 text-white py-3 rounded font-bold hover:bg-yellow-600 disabled:opacity-50 transition-colors shadow cursor-pointer disabled:cursor-not-allowed;
+}
+
+.btn-play {
+  @apply flex-1 bg-green-500 text-white py-3 rounded font-bold hover:bg-green-600 disabled:opacity-50 transition-colors shadow cursor-pointer disabled:cursor-not-allowed;
+}
+
+/* Transition Table Styles */
+.transition-table {
+  @apply w-full text-center border-collapse;
+}
+
+.transition-table th {
+  @apply bg-gray-100 border p-2 text-sm font-semibold text-gray-700;
+}
+
+.transition-table td {
+  @apply border p-1;
+}
+
+.table-input {
+  @apply w-full text-center p-1 outline-none font-mono text-blue-600 font-bold focus:bg-blue-50;
+}
+
+/* Scoreboard Elements */
+.status-label {
+  @apply text-xs text-gray-500 uppercase tracking-wide font-bold mb-1;
+}
+
+.status-value {
+  @apply text-6xl font-bold text-blue-600 font-mono text-center mb-4;
+}
+
+.remaining-string-box {
+  @apply text-4xl font-mono tracking-widest mt-2 border-2 border-gray-200 p-4 bg-gray-50 rounded-lg min-h-[4rem] text-center shadow-inner overflow-x-auto whitespace-nowrap;
+}
+
+.highlight-char {
+  @apply bg-yellow-300 px-2 rounded text-black font-extrabold shadow-sm;
+}
+
+.result-board {
+  @apply h-40 flex items-center justify-center rounded-lg text-4xl font-black text-white transition-colors duration-500 shadow-inner tracking-widest;
+}
